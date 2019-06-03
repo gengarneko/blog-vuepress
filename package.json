@@ -1,0 +1,33 @@
+{
+  "name": "hentai-miao.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.0.0-alpha.48",
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.48",
+    "@vuepress/plugin-nprogress": "^1.0.0-alpha.48",
+    "vuepress": "^1.0.0-alpha.48"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "d": "sh deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hentai-miao/hentai-miao.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hentai-miao/hentai-miao.github.io/issues"
+  },
+  "homepage": "https://github.com/hentai-miao/hentai-miao.github.io#readme"
+}
