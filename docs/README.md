@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://w.wallhaven.cc/full/6k/wallhaven-6k5ez7.jpg
+heroImage: /php_coding_2.jpg
 heroText: Hero 标题
 tagline: Hero 副标题
 actionText: 快速上手 →
