@@ -4,6 +4,7 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
+  // theme: 'vuepress-theme-koala',
   themeConfig: {
     lastUpdated: '最终更新于',
     repo: 'hentai-miao/blog-vuepress',
