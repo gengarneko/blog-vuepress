@@ -92,7 +92,7 @@ module.exports = {
         ] 
       },
       { text: 'GitHub地址', link: 'https://github.com/hentai-miao' },
-      { text: '关于我', link: '/about/' }
+      { text: '求职简历', link: 'http://hentaimiao.me/static-resume/' }
     ],
     sidebar: {
       '/frontEnd/html/': [

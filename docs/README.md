@@ -6,7 +6,7 @@ bgImageStyle: {
   height: '350px'
 }
 actionText: 个人简历 →
-actionLink: https://hentaimiao.me/jirengu-assignments/2-18-%E7%AC%AC%E4%B8%80%E4%B8%AAJS%E4%BD%9C%E5%93%81/keyboard.html
+actionLink: http://hentaimiao.me/static-resume/
 heroText: null
 features:
 - title: A Blog
