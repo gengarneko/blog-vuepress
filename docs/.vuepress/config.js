@@ -102,7 +102,7 @@ module.exports = {
         '','css01','css02','css03','css04','css05','css06','css07','css08','css09','css10','css11',
       ],
       '/frontEnd/js/': [
-        '','js01','js02','js03','js04','js05','js06','js07','js08','js09','js10','js11','js12','js13','js14','js15','js16','js17','js18','js19','js20',
+        '','js01','js02','js03','js04','js05','js06','js07','js08','js09','js10','js11','js12','js13','js14','js15','js16','js17','js18','js19','js20','js21',
       ],
       '/frontEnd/es6/': [
         '','es601','es602','es603','es604',
