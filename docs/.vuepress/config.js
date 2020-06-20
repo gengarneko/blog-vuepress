@@ -87,7 +87,7 @@ module.exports = {
         text: '后端探索',
         items: [
           { text: 'http', link: '/backEnd/http/' },
-          { text: 'git', link: '/backEnd/node/' },
+          { text: 'node', link: '/backEnd/node/' },
           { text: 'git', link: '/backEnd/git/' },
           { text: '其他', link: '/other/' }
         ] 
