@@ -6,10 +6,8 @@ categories:
 tags:
  - Node.js
 ---
-
-首次学习 Node.js，我们需要看着代码想问题，善用社区和文档，使用 CRM 学习法~
+首次学习 Node.js，需要看着代码想问题，善用社区和文档，使用 CRM 学习法~
 <!-- more -->
-
 前置条件，比较少：
 1. VSCode
 2. Node.js
@@ -32,7 +30,7 @@ tags:
 
 ### node 接绝对路径
 
-我们在一个目录下新建 1.js 文件并用 vscode 打开它
+在一个目录下新建 1.js 文件并用 vscode 打开它
 
 ![image-20200620115949892](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfymccb4uqj30cn04xwex.jpg)
 
@@ -76,24 +74,24 @@ QWQ 有BUG，搜不到的那种
 4. node todo delete 1
 5. node todo edit 2
 
-首先我们创建一个 `todo.js`
+首先创建一个 `todo.js`
 
 ![image-20200620125558581](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfynys33cej30dx06mmxy.jpg)
 
-然后我们编辑 `todo.js`：
+然后编辑 `todo.js`：
 
 ```js
 console.log('欢迎使用 todoList 小程序')
 // vscode 命令行中 node 一下试试
 ```
 
-我们现在想实现 `node todo add 做菜` 这样的命令，但是不知道怎么做，怎么办呢？
+现在想实现 `node todo add 做菜` 这样的命令，但是不知道怎么做，怎么办呢？
 
 打开 `google`，搜索 `node get command line` 自动补全 `node get command line args`：
 
 ![image-20200620130152425](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyo4x4s5wj30ow0ihwi9.jpg)
 
-我们可以在万能的 stackoverflow 上找到相关问题并得出答案：
+可以在万能的 stackoverflow 上找到相关问题并得出答案：
 
 ![image-20200620130254157](/Users/xu/Library/Application Support/typora-user-images/image-20200620130254157.png)
 
@@ -112,7 +110,7 @@ console.log(process.argv)
 
 ![image-20200620130632778](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyo9t1trcj30bp0373yo.jpg)
 
-然后我们就可以这么操作：
+然后可以这么操作：
 
 ```js
 const nodePath = process.argv[0]
@@ -126,7 +124,7 @@ console.log('你想操作的内容是' + content)
 
 ![image-20200620131024934](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyogzxtptj30bn03xdg4.jpg)
 
-再然后我们就创建一个任务列表：
+再然后创建一个任务列表：
 
 ```js
 const list = []
@@ -149,13 +147,13 @@ console.table(list)
 
 ![image-20200620131220856](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyogv7wpfj30bk05wjrs.jpg)
 
-好了，现在我们遇到了第一个问题：
+好了，现在遇到了第一个问题：
 
 ![image-20200620131314035](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyogr2x0lj30ch0bl75a.jpg)
 
-我们的数据并没有被保存，因为 `const list = []` 每次都把任务清空了。
+数据并没有被保存，因为 `const list = []` 每次都把任务清空了。
 
-那我们就把任务存在文件里好了，但是我们还不会用 node 创建文件，很简单，搜索 `nodejs create file` 从谷歌继续抄：
+那就把任务存在文件里好了，但是我还不会用 node 创建文件，很简单，搜索 `nodejs create file` 从谷歌继续抄：
 
 ![image-20200620131706112](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyokrghb1j30nx0h275s.jpg)
 
@@ -171,7 +169,7 @@ var fs = require('fs');
 
 ![image-20200620132121197](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyop9v37oj30y20pltbx.jpg)
 
-好了现在我们知道这是个文件系统，但是对我来说英文好麻烦：
+好了现在知道这是个文件系统，但是对我来说英文好麻烦：
 
 ![image-20200620132525454](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyotergcyj30np0lrtc8.jpg)
 
@@ -179,7 +177,7 @@ var fs = require('fs');
 
 ![image-20200620132605082](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyovxndn0j30p30jjn14.jpg)
 
-这两个 api 都不是操作文档的，那我们就搜 `write`：
+这两个 api 都不是操作文档的，那就搜 `write`：
 
 ![image-20200620132833060](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyownps9xj30q80moq7a.jpg)
 
@@ -187,7 +185,7 @@ var fs = require('fs');
 
 ![image-20200620132950155](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyoxzw4h6j30kx0cctad.jpg)
 
-好了，继续我们的工程：
+好了，继续工程：
 
 ```js
 var fs = require('fs')
@@ -200,7 +198,7 @@ fs.writeFileSync('./db', '到此一游')
 
 ![image-20200620135929030](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfypsu1sk5j308p02pt8n.jpg)
 
-好了，我们现在会使用这个 API 了。
+好了，现在会使用这个 API 了。
 
 新的问题：`const list = []` 会覆盖 db 文件
 
@@ -236,7 +234,7 @@ console.table(list)
 
 ![image-20200620140921826](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyq34iq93j30in06tmyc.jpg)
 
-我们发现以字符串形式存取数据，就没法进行数据操作了对吧，也就是说我们存数据的时候就错了：
+以字符串形式存取数据，就没法进行数据操作了对吧，也就是说存数据的时候就错了：
 
 ```js
 // 测试
@@ -307,7 +305,7 @@ JSON.stringfy = function(array) {
 
 存的时候序列化，取得时候反序列化。
 
-新的问题：我们的 db 文件如果被删掉那就没法读取了！我们需要添加一个判断，怎么判断呢？依然是谷歌搜索：
+新的问题：db 文件如果被删掉那就没法读取了！需要添加一个判断，怎么判断呢？依然是谷歌搜索：
 
 ![image-20200620143434893](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyqtdxztaj30lq0g177c.jpg)
 
@@ -357,7 +355,7 @@ if(path.existsSync('./db')) {
 
 ![image-20200620145011579](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyr9lcrmfj30l80k640w.jpg)
 
-被弃用了你不早说？那我们换一个 API 就好了：
+被弃用了你不早说？那换一个 API 就好了：
 
 ```js
 var fs = require('fs')
@@ -393,7 +391,7 @@ if(fs.existsSync('./db')) {
 
 ### node todo list
 
-我们想列出所有任务，该怎么实现呢？我们先把 `verb` 给判断一下：
+想列出所有任务，该怎么实现呢？先把 `verb` 给判断一下：
 
 ```js
 if(verb === 'add') {
@@ -440,7 +438,7 @@ if(verb === 'add') {
 
 ![image-20200620150815383](https://tva1.sinaimg.cn/large/007S8ZIlgy1gfyrsernluj30rv0lan2s.jpg)
 
-九种方法你敢信？我们找一个看起来舒服的：
+九种方法你敢信？找一个看起来舒服的：
 
 ```js
   list.splice(n-1, 1)
@@ -460,7 +458,7 @@ if(verb === 'add') {
 
 ### node todo done 1
 
-获取指定字符串再修改 好麻烦啊，我们来给每个任务接一个 `bool` 标识任务代表它没完成：
+获取指定字符串再修改 好麻烦啊，来给每个任务接一个 `bool` 标识任务代表它没完成：
 
 ```js
 list.push([task, false])
@@ -482,7 +480,7 @@ list.push([task, false])
 
 ### node todo edit 1
 
-根据之前的经验我们很快写出 `edit`:
+根据之前的经验很快写出 `edit`:
 
 ```
 } else if(verb === 'edit') {
@@ -514,7 +512,7 @@ const edit = process.argv[4]
 
 ## 代码极致优化
 
-我们的功能都实现完毕了，但是存在两大问题：
+功能都实现完毕了，但是存在两大问题：
 
 - 重复率太高
 - 存在 BUG
@@ -613,7 +611,7 @@ switch(verb) {
    list.push([content, false])
    ```
 
-我们可以让我们的代码更语义化：
+可以让代码更语义化：
 
 ```js
 var fs = require('fs')
@@ -698,12 +696,11 @@ switch(verb) {
     break;
 }
 ```
+更好地改代码，得从更高的纬度去看：
 
-我们必须改代码，从更高的纬度去看：
+​	每一个方法都有存取文件的组成，而 `add` 方法太复杂了，因为它处理了一个异常情况，需要确保不存在异常情况，怎么解决呢？
 
-​	每一个方法都有存取文件的组成，而 `add` 方法太复杂了，因为它处理了一个异常情况，我们需要确保不存在异常情况，怎么解决呢？
-
-​	我们在外部解决问题： `fs.statSync(dbPath)`：
+​	在外部解决问题： `fs.statSync(dbPath)`：
 
 ```js
 try{
@@ -713,7 +710,7 @@ try{
 }
 ```
 
-我们通过观察是否报错来做判断，确保在方法调用前，db 文件必在：
+通过观察是否报错来做判断，确保在方法调用前，db 文件必在：
 
 ```js
   case 'add':
@@ -726,7 +723,7 @@ try{
 
 ### 改 BUG
 
-我们要在 `fetch()` 中对 list 变量 做一个判断，判断是否存在，并给一个空数组兜底。
+要在 `fetch()` 中对 list 变量 做一个判断，判断是否存在，并给一个空数组兜底。
 
 ### 代码韩国行
 
@@ -809,7 +806,7 @@ switch(verb) {
 }
 ```
 
-我们看到 `save() display()` 还是在重复，继续整容：
+看到 `save() display()` 还是在重复，继续整容：
 
 ```js
 var fs = require('fs')
@@ -908,7 +905,7 @@ const dbPath = __dirname + '/db'
 const dbPath = path.join(__dirname, 'db')
 ```
 
-我们修改一下 `display()` 优化体验：
+修改一下 `display()` 优化体验：
 
 ```js
 
@@ -934,7 +931,7 @@ source ~/.bashrc
 
 ## 总结
 
-虽然很短很简单，但是从这篇文章我们学到了：
+虽然很短很简单，但是从这篇文章学到了：
 
 1. 如何获取命令行参数
 2. 如何创建文件
