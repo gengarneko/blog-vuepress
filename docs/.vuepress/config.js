@@ -87,6 +87,7 @@ module.exports = {
         text: '后端探索',
         items: [
           { text: 'http', link: '/backEnd/http/' },
+          { text: 'git', link: '/backEnd/node/' },
           { text: 'git', link: '/backEnd/git/' },
           { text: '其他', link: '/other/' }
         ] 
@@ -109,6 +110,9 @@ module.exports = {
       ],
       '/backEnd/http/': [
         '','http01','http02','http03','http04','http05','http06','http07',
+      ],
+      '/backEnd/node/': [
+        '','node01'
       ],
       '/webpack/': [{
         title: 'Webpack',
