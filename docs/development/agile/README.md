@@ -294,4 +294,11 @@ WIP类似于Scrum的迭代清单，一旦制定后就不再加入新的需求（
 
 3.分配：项目下的任务应该支持分配到具体的负责人
 
-原文来自：[https://plan.io/blog](
+原文来自：[https://plan.io/blog](https://link.zhihu.com/?target=https%3A//plan.io/blog)
+
+
+
+## 参考文章
+
+[敏捷的用户故事方法](https://tonydeng.github.io/user-stories-applied/)
+
