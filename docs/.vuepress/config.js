@@ -94,12 +94,18 @@ module.exports = {
         items: [
           { text: 'http', link: '/backEnd/http/' },
           { text: 'node', link: '/backEnd/node/' },
-          { text: 'git', link: '/backEnd/git/' },
           { text: '其他', link: '/other/' }
         ] 
       },
-      { text: 'GitHub地址', link: 'https://github.com/hentai-miao' },
-      { text: '求职简历', link: 'http://hentaimiao.me/static-resume/' }
+      { 
+        text: '软件开发',
+        items: [
+          { text: 'Git版本控制', link: '/backEnd/git/' },
+          { text: '敏捷开发', link: '/development/agile/' },
+        ] 
+      },
+      // { text: 'GitHub地址', link: 'https://github.com/hentai-miao' },
+      // { text: '求职简历', link: 'http://hentaimiao.me/static-resume/' }
     ],
     sidebar: {
       '/frontEnd/html/': [

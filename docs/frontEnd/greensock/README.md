@@ -1,7 +1,15 @@
-# GreenSock（GASP）初窥
+---
+title: GreenSock（GASP）初窥
+date: 2020-06-24
+categories:
+ - frontEnd
+tags:
+ - animation
+---
+GASP 全称 GreenSock Animation Platform，是一个 JS 的动画框架，用于创建高性能、零依赖、跨浏览器动画GSAP是灵活的，可以与React、Vue、Angular和vanilla JS协同工作。
+<!-- more -->
 
-GASP 全称 GreenSock Animation Platform，是一个 JS 的动画框架，用于创建高性能、零依赖、跨浏览器动画GSAP是灵活的，可以与React、Vue、Angular和vanilla JS协同工作。先打开它的官网：https://greensock.com
-
+先打开它的官网：https://greensock.com
 ![image-20200624122307284](https://tva1.sinaimg.cn/large/007S8ZIlgy1gg39htcynpj31gv0h8414.jpg)
 
 介绍很简单：适用于现代网络的超高性能、专业级别动画，它有用于前端的 JS 库GASP：
@@ -523,4 +531,4 @@ GSAP是专业动画库，在大部分情况下，它也具备更好的动画性�
 - [GreenSock (TweenMax) 简单入门教程](https://juejin.im/entry/591a600f128fe1005cdae46f)
 - [[动画]快速入手 GSAP](https://juejin.im/post/58d4f52544d9040068659edd)
 - [GSAP - 专业的 Web 动画库](https://segmentfault.com/a/1190000005366176)
-- [GreenSocks Animation Platform详细工作机制](
+- [GreenSocks Animation Platform详细工作机制](https://zhuanlan.zhihu.com/p/74465798)
