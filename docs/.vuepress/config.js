@@ -67,6 +67,12 @@ module.exports = {
             ]
           },
           { 
+            text: '动画',
+            items: [
+              { text: 'GreenSock', link: '/frontEnd/greensock/' },
+            ]
+          },
+          { 
             text: '框架',
             items: [
               { text: 'Vue', link: '/frontEnd/vue/' },
