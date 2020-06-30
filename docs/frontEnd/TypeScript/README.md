@@ -1,11 +1,14 @@
 ---
-sidebar: auto
+title: TypeScript 概念索引
+date: 2020-06-21
+categories:
+ - frontEnd
+tags:
+ - TypeScript
+sidebarDepth: 4
 ---
-
-# TypeScript
-
 `TypeScript`是`JavaScript`的一个超集，主要提供了**类型系统**和对**ES6**的支持，它与2012年10月正式发布第一个版本。
-
+<!-- more -->
 优势：
 * 能在开发过程中更快的发现潜在问题。
 * 对编辑器更友好的代码提示功能。

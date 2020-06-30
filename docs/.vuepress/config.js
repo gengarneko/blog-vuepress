@@ -47,6 +47,7 @@ module.exports = {
       }
     },
     noFoundPageByTencent: false,
+    sidebarDepth: 4,
     // 官方配置
     lastUpdated: '最终更新于',
     repo: 'hentai-miao/blog-vuepress',
@@ -119,6 +120,9 @@ module.exports = {
       ],
       '/frontEnd/es6/': [
         '','es601','es602','es603','es604',
+      ],
+      '/frontEnd/TypeScript/': [
+        '','ts01',
       ],
       '/backEnd/http/': [
         '','http01','http02','http03','http04','http05','http06','http07',
