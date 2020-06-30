@@ -5,7 +5,7 @@ categories:
  - frontEnd
 tags:
  - React
-sidebarDepth: 4
+sidebarDepth: 6
 ---
 React 是一个声明式，高效且灵活的用于构建用户界面的 JavaScript 库。使用 React 可以将一些简短、独立的代码片段组合成复杂的 UI 界面，这些代码片段被称作“组件”。
 <!-- more -->
@@ -39,13 +39,13 @@ React 是一个声明式，高效且灵活的用于构建用户界面的 JavaScr
 
 
 
-#### 文件目录
+### 文件目录
 
 ![image-20200630113237873](https://tva1.sinaimg.cn/large/007S8ZIlgy1gga5qvxt9pj306n06raab.jpg)
 
 
 
-#### CRA 文件结构
+### CRA 文件结构
 
 ```
 ├── README.md 						⽂档
@@ -66,7 +66,7 @@ React 是一个声明式，高效且灵活的用于构建用户界面的 JavaScr
 
 
 
-#### 入口文件 `index.js` 简单介绍
+### 入口文件 `index.js` 简单介绍
 
 ```js
 // React 负责逻辑控制，数据 -> VDOM
@@ -98,7 +98,7 @@ serviceWorker.unregister();
 
 
 
-#### ⼊⼝⽂件 `webpack.conﬁg.js` 定义：
+### ⼊⼝⽂件 `webpack.conﬁg.js` 定义：
 
 ```js
 entry: [ 
@@ -125,7 +125,7 @@ const sassModuleRegex = /\.module\.(scss|sass)$/;
 
 
 
-#### React 和 ReactDOM
+### React 和 ReactDOM
 
 删除 src 下⾯所有代码，新建 index.js
 
@@ -168,7 +168,7 @@ ReactDOM.render(<h1>Hello React</h1>, document.querySelector('#root'));
 
 ### 起步
 
-#### JSX
+### JSX
 
 JSX 是一种 JavaScript 的语法扩展，其格式比较像模板语言，但事实上完全是在 JavaScript 内部实现的
 
@@ -176,7 +176,7 @@ JSX 可以很好地描述 UI，能够提高开发效率
 
 
 
-#### 基本使用
+### 基本使用
 
 表达式 `{}` 的使用：
 
@@ -187,7 +187,7 @@ const jsx = <div>hello, {name}</div>;
 
 
 
-#### 函数
+### 函数
 
 函数是合法表达式：
 
@@ -204,7 +204,7 @@ const jsx = <div>{ formatName(user) }</div>
 
 
 
-#### 对象
+### 对象
 
 JSX 是 JS 对象，是合法表达是：
 
@@ -215,7 +215,7 @@ const jsx = <div>{ greet }</div>
 
 
 
-#### 条件语句
+### 条件语句
 
 条件语句可以基于以上概念实现：
 
@@ -233,7 +233,7 @@ const jsx = (
 
 
 
-#### 数组
+### 数组
 
 数组会被作为一组子元素对待，数组中存放一组 JSX 可用于显示列表数据
 
@@ -254,7 +254,7 @@ const jsx = (
 
 
 
-#### 属性的使用
+### 属性的使用
 
 ```js
 import logo from "./logo.svg"
@@ -269,7 +269,7 @@ const jsx = (
 
 
 
-#### 模块化
+### 模块化
 
 css 模块化，创建 index.module.css，index.js
 
@@ -303,7 +303,7 @@ import style from "./index.module.scss"
 
 ### 起步
 
-#### 组件
+### 组件
 
 从概念上类似于 JavaScript 函数，它接受任意的入参（"props"），并返回用于描述页面展示内容的 React 元素
 
@@ -312,7 +312,7 @@ import style from "./index.module.scss"
 - `class 组件` 
 - `function 组件`
 
-#### class 组件
+### class 组件
 
 `class` 组件通常拥有状态和生命周期，继承于 `Component`，实现 `render` 方法：
 
@@ -348,7 +348,7 @@ export default class ClassComponent extends React.Component {
 
 
 
-#### function 组件
+### function 组件
 
 函数组件通常无状态，仅关注内容展示，返回渲染结果即可
 
@@ -398,7 +398,7 @@ export function FunctionComponent(props) {
 
 ### 起步
 
-#### 正确使用 setState
+### 正确使用 setState
 
 ```js
 setState(partialState, callback)
@@ -409,9 +409,9 @@ setState(partialState, callback)
 
 
 
-#### 关于 `setState()` 应该了解的
+### 关于 `setState()` 应该了解的
 
-##### 不要直接修改 State
+### 不要直接修改 State
 
 例如，此代码不会重新渲染组件：
 
@@ -429,7 +429,7 @@ this.setState({comment: 'Hell
 
 
 
-##### State 的更新可能是异步的
+### State 的更新可能是异步的
 
 出于性能考虑，React 可能会把多个 `setState()` 调⽤合并成⼀个调⽤。
 
@@ -505,7 +505,7 @@ export default class SetStatePage extends Component {
 
 
 
-##### State 的更新会被合并
+### State 的更新会被合并
 
 ```js
 changeValue = v => { 
@@ -553,19 +553,19 @@ setCounter = () => {
 
 ### 知识要点
 
-#### 生命周期方法
+### 生命周期方法
 
 生命周期方法，用于在不同组件不同阶段执行自定义功能。在组件被创建并插入到 DOM 时（挂载中阶段 mounting），组件更新时，组件取消挂载或从 DOM 中删除时，都有可以使用的声明周期方法。
 
 
 
-#### v16.3 之前的生命周期
+### v16.3 之前的生命周期
 
 ![image-20200630144249308](https://tva1.sinaimg.cn/large/007S8ZIlgy1ggab8gqkx3j30ec0jjdkj.jpg)
 
 
 
-#### v16.4 之后的生命周期
+### v16.4 之后的生命周期
 
 ![image-20200630144330061](https://tva1.sinaimg.cn/large/007S8ZIlgy1ggab93eqhbj30v10f3jt6.jpg)
 
@@ -589,9 +589,9 @@ npx react-codemod rename-unsafe-lifecycles <path>
 
 
 
-#### 新引入的两个生命周期
+### 新引入的两个生命周期
 
-##### getDerivedStateFromProps
+### getDerivedStateFromProps
 
 ```js
 static getDerivedStateFromProps(props, state)
@@ -601,7 +601,7 @@ static getDerivedStateFromProps(props, state)
 
 请注意，不管原因是什么，都会在每次渲染前触发此方法，这与 `UNSAFE_componentWillReceiveProps` 形成对比，后者在父组件重新渲染时触发，而不是在内部调用 `setState` 时
 
-##### getSnapshotBeforeUpdate
+### getSnapshotBeforeUpdate
 
 ```js
 getSnapshotBeforeUpdate(prevProps, prevState)
@@ -613,7 +613,7 @@ getSnapshotBeforeUpdate(prevProps, prevState)
 
 
 
-#### 验证生命周期
+### 验证生命周期
 
 范例：创建 `LifeCyclePage.js`
 
@@ -752,7 +752,7 @@ class Child extends Component {
 
 
 
-#### 不具名
+### 不具名
 
 ```js
 // 将公共部分抽象出来
@@ -800,7 +800,7 @@ export default class UserPage extends Component {
 
 
 
-#### 具名
+### 具名
 
 参照 vue 的具名插槽，传个对象进去：
 
@@ -1050,7 +1050,7 @@ store.subscribe(render)
 
 ### 要点
 
-#### 安装
+### 安装
 
 ```js
 npm install react-redux --save
@@ -1058,7 +1058,7 @@ npm install react-redux --save
 
 
 
-#### 使用 react-redux
+### 使用 react-redux
 
 react-redux 提供了两个 api
 
@@ -1147,7 +1147,7 @@ export default connect(
 
 ### 要点
 
-#### react-router
+### react-router
 
 react-router 包含三个库：
 
@@ -1157,13 +1157,13 @@ react-router 包含三个库：
 
 `react-router` 提供最 基本的路由功能，实际使⽤的时候我们不会直接安装 `react-router`，⽽是根据应⽤运⾏的环境选择安装 `react-router-dom`（在浏览器中使⽤）或 `react-router-native`（在 rn 中使⽤）。`react-router-dom` 和 `react-router-native` 都依赖 `react-router`，所以在安装时，`react-router` 也会⾃动安装，创建web应⽤， 使⽤：
 
-#### 安装
+### 安装
 
 ```js
 npm install --save react-router-dom
 ```
 
-#### 基本使用
+### 基本使用
 
 react-router 中风行一切皆组件的思想，路由器 -Router、链接 -Link、路由 -Route、独占 -Switch、重定向 -Redirect 都以组件形式存在、
 
@@ -1219,31 +1219,31 @@ class UserPage extends Component {
 
 
 
-#### Route 渲染内容三种方式
+### Route 渲染内容三种方式
 
 Route 渲染优先级：children > component > render
 
 这三种方法互斥，只能选择其中一种
 
-##### children: func
+### children: func
 
 有时候，不管 location 是否匹配，你都需要渲染⼀些内容，这时候你可以⽤ children
 
 除了不管 location 是否匹配都会被渲染之外，其它⼯作⽅法与 render 完全⼀样
 
-##### render:  func
+### render:  func
 
 当你⽤ render 的时候，你调⽤的只是个函数。
 
 只在当 location 匹配的时候渲染
 
-##### component: component
+### component: component
 
 只在当 location 匹配的时候渲染
 
 
 
-#### 404 页面
+### 404 页面
 
 设定⼀个没有 path 的路由在路由列表最后⾯，表示⼀定匹配
 
@@ -1295,7 +1295,7 @@ class EmptyPage extends Component {
 
 ### 知识点
 
-#### 实现功能优化
+### 实现功能优化
 
 定制了 shouldComponentUpdate 后的 Component：
 
@@ -1336,7 +1336,7 @@ export default class PureComponentPage extends PureComponent { 							constructo
 
 
 
-#### 浅⽐较
+### 浅⽐较
 
 缺点是必须要⽤ class 形式，⽽且要注意是浅⽐较（无法应对复杂对象）
 
@@ -1344,7 +1344,7 @@ export default class PureComponentPage extends PureComponent { 							constructo
 
 
 
-#### 与Component
+### 与Component
 
 `React.PureComponent` 与 `React.Component` 很相似。两者的区别在于 `React.Component` 并未实 现 `shouldComponentUpdate()` ，⽽ `React.PureComponent` 中以浅层对⽐ `prop` 和 `state` 的⽅式来实现了该函数。
 
@@ -1377,7 +1377,7 @@ export default class PureComponentPage extends PureComponent { 							constructo
 
 ### 知识点
 
-#### 认识 Hook
+### 认识 Hook
 
 Hook 是什么？ Hook 是⼀个特殊的函数，它可以让你“钩⼊” React 的特性。例如， useState 是允许 你在 React 函数组件中添加 state 的 Hook
 
@@ -1399,9 +1399,9 @@ export default function HookPage(props) {
 }
 ```
 
-#### 
+### 
 
-#### 使用 Effect Hook
+### 使用 Effect Hook
 
 Eﬀect Hook 可以让你在函数组件中执⾏副作⽤操作。
 
@@ -1437,7 +1437,7 @@ export default function HookPage(props) {
 
 
 
-#### effect 的条件执行
+### effect 的条件执行
 
 默认情况下，eﬀect 会在每轮组件渲染完成后执⾏。这样的话，⼀旦 eﬀect 的依赖发⽣变化，它就会被重新创建。
 
@@ -1478,7 +1478,7 @@ export default function HookPage(props) {
 
 
 
-#### 清除 effect
+### 清除 effect
 
 通常，组件卸载时需要清除 eﬀect 创建的诸如订阅或计时器 ID 等资源。要实现这⼀点， useEffect 函数需返回⼀个清除函数，以防⽌内存泄漏，清除函数会在组件卸载前执⾏
 
@@ -1510,7 +1510,7 @@ useEffect(() => {
 
 ### 知识点
 
-#### 自定义 Hook
+### 自定义 Hook
 
 有时候我们会想要在组件之间重⽤⼀些状态逻辑。⽬前为⽌，有两种主流⽅案来解决这个问题：[⾼阶组件](https://zh-hans.reactjs.org/docs/higher-order-components.html)和 [render props](https://zh-hans.reactjs.org/docs/render-props.html)，⾃定义 Hook 可以让你在不增加组件的情况下达到同样的⽬的。
 
@@ -1557,7 +1557,7 @@ function useClock() {
 
 
 
-#### Hook 使用规则
+### Hook 使用规则
 
 Hook 就是 JavaScript 函数，但是使用它们会有两个额外规则：
 
@@ -1582,7 +1582,7 @@ Hook 就是 JavaScript 函数，但是使用它们会有两个额外规则：
 
 ### 知识点
 
-#### useMemo
+### useMemo
 
 把“创建”函数和依赖项数组作为参数传⼊ `useMemo` ，它仅会在某个依赖项改变时才重新计算 `memoized` 值。这种优化有助于避免在每次渲染时都进⾏⾼开销的计算。
 
@@ -1615,7 +1615,7 @@ export default function UseMemoPage(props) {
 
 
 
-#### useCallback
+### useCallback
 
 把内联回调函数及依赖项数组作为参数传⼊ `useCallback` ，它将返回该回调函数的 `memoized` 版本， 该回调函数仅在某个依赖项改变时才会更新。当你把回调函数传递给经优化的并使⽤引⽤相等性去避免⾮必要渲染（例如 `shouldComponentUpdate` ）的⼦组件时，它将⾮常有⽤
 

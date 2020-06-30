@@ -34,6 +34,7 @@ module.exports = {
     author: 'hentaimiao',
     // theme-reco 配置
     sidebar: 'auto', //在所有页面中启用自动生成侧栏
+    sidebarDepth: 6,
     authorAvatar: '/avatar.jpg',
     type: 'blog',
     blogConfig: {
@@ -47,7 +48,6 @@ module.exports = {
       }
     },
     noFoundPageByTencent: false,
-    sidebarDepth: 4,
     // 官方配置
     lastUpdated: '最终更新于',
     repo: 'hentai-miao/blog-vuepress',
