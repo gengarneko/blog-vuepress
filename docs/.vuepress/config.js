@@ -124,11 +124,14 @@ module.exports = {
       '/frontEnd/TypeScript/': [
         '','ts01',
       ],
+      '/frontEnd/react/': [
+        '','react01',
+      ],
       '/backEnd/http/': [
         '','http01','http02','http03','http04','http05','http06','http07',
       ],
       '/backEnd/node/': [
-        '','node01'
+        '',
       ],
       '/webpack/': [{
         title: 'Webpack',
