@@ -127,6 +127,9 @@ module.exports = {
       '/frontEnd/react/': [
         '','react01',
       ],
+      '/backEnd/git/': [
+        '', 'git01',
+      ],
       '/backEnd/http/': [
         '','http01','http02','http03','http04','http05','http06','http07',
       ],
