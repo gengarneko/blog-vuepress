@@ -83,6 +83,7 @@ module.exports = {
           { 
             text: '其他',
             items: [
+              { text: 'Axios', link: '/frontEnd/axios/' },
               { text: 'TypeScript', link: '/frontEnd/TypeScript/' },
               { text: 'Webpack', link: '/webpack/' }
             ]
@@ -109,6 +110,9 @@ module.exports = {
       // { text: '求职简历', link: 'http://hentaimiao.me/static-resume/' }
     ],
     sidebar: {
+      '/frontEnd/axios/': [
+        '', 'axios01'
+      ],
       '/frontEnd/html/': [
         '','html01'
       ],
