@@ -7,18 +7,18 @@
     "doc": "docs"
   },
   "dependencies": {
-    "vue-server-renderer": "^2.6.10",
+    "vue-server-renderer": "^2.6.12",
     "vuepress-theme-koala": "^1.0.0-alpha.44.3",
-    "vuepress-theme-reco": "^1.4.6"
+    "vuepress-theme-reco": "^1.5.6"
   },
   "devDependencies": {
-    "@vuepress/plugin-active-header-links": "^1.5.1",
-    "@vuepress/plugin-back-to-top": "^1.5.1",
+    "@vuepress/plugin-active-header-links": "^1.5.4",
+    "@vuepress/plugin-back-to-top": "^1.5.4",
     "@vuepress/plugin-blog": "^1.9.2",
-    "@vuepress/plugin-nprogress": "^1.5.1",
-    "vue-loader": "^15.9.2",
-    "vue-template-compiler": "^2.6.10",
-    "vuepress": "^1.5.1"
+    "@vuepress/plugin-nprogress": "^1.5.4",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.12",
+    "vuepress": "^1.5.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
