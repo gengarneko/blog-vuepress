@@ -147,7 +147,7 @@ module.exports = {
       ],
       '/frontEnd/es6/': ['', 'es601', 'es602', 'es603', 'es604'],
       '/frontEnd/TypeScript/': ['', 'ts01'],
-      '/frontEnd/react/': ['', 'react01', 'react02', 'react03', 'react04'],
+      '/frontEnd/react/': ['', 'react01', 'react02', 'react03', 'react04', 'react05'],
       '/backEnd/git/': ['', 'git01'],
       '/backEnd/http/': ['', 'http01', 'http02', 'http03', 'http04', 'http05', 'http06', 'http07'],
       '/backEnd/node/': [''],
